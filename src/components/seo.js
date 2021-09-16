@@ -10,7 +10,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         siteMetadata {
           title
           description
-          author
         }
       }
     }

@@ -3,8 +3,8 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["Helvetica", "poppins light", "ui-sans-serif", "system-ui"],
-      serif: ["Helvetica", "poppins medium", "ui-serif", "Georgia"],
+      sans: ["Montserrat", "poppins light", "ui-sans-serif", "system-ui"],
+      serif: ["Montserrat", "poppins medium", "ui-serif", "Georgia"],
     },
     extend: {
       colors: {

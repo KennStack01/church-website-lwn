@@ -10,6 +10,9 @@ module.exports = {
     author: `@taylorbryant`,
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    // `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
@@ -19,7 +22,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.green["500"],
+        theme_color: "#122232",
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },
