@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import Header from "./HeaderTest";
+import Header from "./Header";
 
 function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900">
-      <div className="shadow-sm top-0 sticky bg-white z-50 w-full md:backdrop-filter md:backdrop-blur-xl backdrop-brightness-75">
+      <div className="top-0 sticky  z-50 w-full ">
         <Header />
       </div>
 
