@@ -3,11 +3,9 @@ import React from "react";
 import { Link } from "gatsby";
 // import { Fragment } from 'react'
 import { Disclosure } from "@headlessui/react";
-// import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { CgClose } from "react-icons/cg";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { StaticImage } from "gatsby-plugin-image";
-// import Logo from "../assets/NezaLab-Logo.svg";
 
 const navigation = [
   { name: "Welcome", route: "/", current: false },
@@ -31,7 +29,7 @@ const activeLinkStyles = {
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-export default function Header() {
+const Header = () => {
   return (
     <Disclosure
       as="nav"
@@ -152,4 +150,6 @@ export default function Header() {
       )}
     </Disclosure>
   );
-}
+};
+
+export default Header;
