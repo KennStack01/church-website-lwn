@@ -19,7 +19,7 @@ const Footer = () => {
             placeholder="blur"
           />
         </div>
-        <div className="flex flex-row justify-between my-4 md:my-auto mx-1 md:mx-10">
+        <div className="flex flex-row justify-between my-4 md:my-auto mx-1 md:mr-24 md:mx-10">
           <div className="flex flex-col mx-3 md:mx-5">
             <Link to="/" className="hover:text-yellow-400">
               Welcome
@@ -46,9 +46,6 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-row md:flex-col mx-auto md:my-auto my-5">
-          {/* <h3 className="text-xl my-auto underline hidden md:block">
-            Social Media
-          </h3> */}
           <div className="cursor-pointer my-1 md:my-2">
             <a
               href="https://www.facebook.com/lifewordministriesinternational/"
