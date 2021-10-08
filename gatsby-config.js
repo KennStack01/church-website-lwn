@@ -31,32 +31,13 @@ module.exports = {
         icon: `src/images/tailwind-icon.png`,
       },
     },
-    // {
-    //   resolve: "gatsby-source-prismic",
-    //   options: {
-    //     repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
-    //     accessToken: process.env.PRISMIC_ACCESS_TOKEN,
-    //     customTypesApiToken: process.env.PRISMIC_CUSTOM_TYPES_API_TOKEN,
-    //     // linkResolver: (doc) => linkResolver(doc),
-    //   },
-    // },
     {
-      resolve: "gatsby-source-prismic",
+      resolve: "gatsby-source-graphcms",
       options: {
-        repositoryName: `${process.env.GATSBY_PRISMIC_REPO_NAME}`,
-        accessToken: `${process.env.PRISMIC_ACCESS_TOKEN}`,
-        // linkResolver: () => prismicLinkResolver,
-        // htmlSerializer: () => prismicHtmlSerializer,
-        schemas: {
-          page: require("./schemas/page.json"),
-        },
-        // lang: 'en-gb',
-      },
-    },
-    {
-      resolve: "gatsby-plugin-prismic-previews",
-      options: {
-        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        // Your GraphCMS API endpoint. Available from your project settings.
+        endpoint: process.env.GATSBY_GRAPHCMS_ENDPOINT,
+        // A PAT (Permanent Auth Token) for your project. Required if your project is not available publicly, or you want to scope access to a specific content stage (i.e. draft content).
+        token: process.env.GATSBY_GRAPHCMS_TOKEN,
       },
     },
     {
