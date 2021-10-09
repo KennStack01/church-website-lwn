@@ -16,9 +16,9 @@ const Video = ({ videoSrcURL = "", videoTitle }) => {
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
-      height="320"
-      width="500"
-      className="rounded-lg mx-3 my-4 md:my-8"
+      // height="320"
+      // width="500"
+      className="rounded-lg mx-3 my-4 md:my-8 w-full md:w-5/6"
     />
     // <div className="my-4 md:my-8">
     //   <ReactPlayer url={URL} />
