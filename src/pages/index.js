@@ -1,4 +1,5 @@
 import React from "react";
+import HeroSection from "../components/Home/HeroSection";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -9,6 +10,7 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
+      <HeroSection />
     </Layout>
   );
 }

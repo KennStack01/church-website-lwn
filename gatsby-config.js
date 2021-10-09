@@ -28,7 +28,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: "#122232",
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/lwn-favicon.png`,
       },
     },
     {

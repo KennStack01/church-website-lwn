@@ -1,0 +1,41 @@
+fragment ContactDetails on ContactDetails {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  facebookLink1
+  lifePayLink
+  facebookLink2
+  instagramLink
+  youTubeChannelLink
+  payPalLink1
+  payPalLink2
+  emailAddress1
+  emailAddress2
+  phoneNumber1
+  phoneNumber2
+  phoneNumber3
+  phoneNumber4
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+}
