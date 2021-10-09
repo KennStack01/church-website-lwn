@@ -9,9 +9,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Life Word Nation`,
+    description: `To release People into Their Destinies Through The Life-Giving Word And The Power of The Spirit Act 5:20`,
+    author: `Rev Visu`,
   },
   plugins: [
     `gatsby-plugin-image`,
