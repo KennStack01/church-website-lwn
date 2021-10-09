@@ -30,7 +30,7 @@ const Announcement = () => {
         <a
           href={data.graphCmsChurchAnnouncement.link}
           target="__blank"
-          className="flex flex-row p-2 mx-auto my-5 text-blue-back-500 font-semibold text-center w-28 rounded bg-white"
+          className="flex flex-row p-2 mx-auto my-5 text-blue-back-500 font-semibold text-center w-28 rounded bg-white hover:bg-gray-100"
         >
           <h3 className="my-auto">Discover</h3>
           <div className="text-2xl my-auto">

@@ -1,4 +1,5 @@
 import React from "react";
+import AboutUs from "../components/Home/AboutUs";
 import Announcement from "../components/Home/Announcement";
 import HeroSection from "../components/Home/HeroSection";
 import Layout from "../components/layout";
@@ -15,6 +16,7 @@ function IndexPage() {
         <HeroSection />
       </div>
       <Announcement />
+      <AboutUs />
     </Layout>
   );
 }
