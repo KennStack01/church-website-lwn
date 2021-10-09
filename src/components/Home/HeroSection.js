@@ -36,7 +36,7 @@ const HeroSection = () => {
         to="/contact"
         className="flex flex-row text-left z-30 relative bg-new-yellow-500 hover:bg-new-yellow-600 rounded text-blue-back-400 p-3"
       >
-        <h3 className="text-md md:text-xl font-semibold">Join Us</h3>
+        <h3 className="text-md md:text-xl font-semibold my-auto">Join Us</h3>
         <div className="text-3xl my-auto">
           <BiDoorOpen />
         </div>

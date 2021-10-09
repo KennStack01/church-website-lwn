@@ -18,8 +18,8 @@ const AboutUs = () => {
       <img
         src={data.graphCmsShortDescriptionOfTheMission.backgroundPicture.url}
         loading="lazy"
-        placeholder="blurred"
-        className="w-full relative md:h-70 inset-0 bg-cover bg-center z-0 filter brightness-50"
+        placeholder="blur"
+        className="w-full relative md:h-1/2 inset-0 bg-cover bg-center z-0 filter brightness-50"
       />
       <h1 className="absolute z-30 inset-0 font-bold text-xl md:text-4xl text-center mt-4 md:mt-6">
         Life Word Nation
