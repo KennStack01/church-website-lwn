@@ -2,6 +2,7 @@ import React from "react";
 import AboutUs from "../components/Home/AboutUs";
 import Announcement from "../components/Home/Announcement";
 import HeroSection from "../components/Home/HeroSection";
+import VideosList from "../components/Home/SermonVideos/VideosList";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -17,6 +18,7 @@ function IndexPage() {
       </div>
       <Announcement />
       <AboutUs />
+      <VideosList />
     </Layout>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 const AboutUs = () => {
   const data = useStaticQuery(graphql`
@@ -14,20 +14,28 @@ const AboutUs = () => {
   `);
 
   return (
-    <div className="w-full relative text-white ">
-      <img
-        src={data.graphCmsShortDescriptionOfTheMission.backgroundPicture.url}
-        loading="lazy"
-        placeholder="blur"
-        className="w-full relative md:h-1/2 inset-0 bg-cover bg-center z-0 filter brightness-50"
-      />
-      <h1 className="absolute z-30 inset-0 font-bold text-xl md:text-4xl text-center mt-4 md:mt-6">
-        Life Word Nation
-      </h1>
-      <p className="absolute mx-3 md:mx-auto md:w-2/3 inset-0 flex justify-center items-center text-sm md:text-lg text-justify font-semibold z-10">
-        {" "}
-        {data.graphCmsShortDescriptionOfTheMission.description}{" "}
-      </p>
+    <div>
+      <div className="w-full relative text-white ">
+        <img
+          src={data.graphCmsShortDescriptionOfTheMission.backgroundPicture.url}
+          loading="lazy"
+          placeholder="blur"
+          className="w-full relative h-48 md:h-60 inset-0 object-cover bg-center z-0 filter brightness-50"
+        />
+        <h1 className="absolute z-30 inset-0 font-bold text-xl md:text-4xl text-center mt-4 md:mt-6">
+          Life Word Nation
+        </h1>
+        <p className="absolute mx-3 mt-5 md:mx-auto md:w-2/3 inset-0 flex justify-center items-center text-sm md:text-lg text-justify font-medium z-10">
+          {" "}
+          {data.graphCmsShortDescriptionOfTheMission.description}{" "}
+        </p>
+      </div>
+      <Link
+        to="/community"
+        className="flex flex-row font-semibold mx-auto w-24 p-2 text-blue-back-500 bg-new-yellow-600 hover:bg-new-yellow-700 rounded -mt-6 z-10 relative"
+      >
+        About Us
+      </Link>
     </div>
   );
 };
