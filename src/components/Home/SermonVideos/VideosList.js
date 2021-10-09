@@ -24,8 +24,13 @@ const VideosList = () => {
           <Video
             key={video.videoSrcUrl}
             videoTitle={video.videoTitle}
-            videoSrcURL={video.videoSrcURL}
+            videoSrcURL="https://www.youtube.com/watch?v=fjjqzivJQqs"
           />
+          // <Video
+          //   key={video.videoSrcUrl}
+          //   videoTitle={video.videoTitle}
+          //   videoSrcURL={video.videoSrcURL}
+          // />
         ))}
       </div>
     </div>

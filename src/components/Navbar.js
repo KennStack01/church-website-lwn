@@ -1,10 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 // import { Fragment } from 'react'
 import { Disclosure } from "@headlessui/react";
 import { CgClose } from "react-icons/cg";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { RiArrowDownSFill } from "react-icons/ri";
 import { StaticImage } from "gatsby-plugin-image";
 
 const navigation = [
@@ -30,10 +31,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const Header = () => {
+  const [isHovered, setHovered] = useState(false);
+
   return (
     <Disclosure
       as="nav"
-      className="text-gray-900 shadow-sm bg-white backdrop-filter backdrop-blur-xl"
+      className="relative text-gray-900 shadow-sm bg-white backdrop-filter backdrop-blur-xl"
     >
       {({ open }) => (
         <>
@@ -74,17 +77,64 @@ const Header = () => {
                       <Link
                         key={item.name}
                         to={item.route}
+                        onMouseEnter={() => {
+                          if (item.name === "Community") {
+                            setHovered(true);
+                          }
+                        }}
+                        onMouseLeave={() => {
+                          if (item.name === "Community") {
+                            setHovered(false);
+                          }
+                        }}
                         className={classNames(
                           item.current
                             ? "bg-white text-gray-600"
                             : "text-gray-900",
-                          "p-3 text-sm md:text-md font-semibold hover:underline"
+                          "p-3 text-sm md:text-md font-semibold hover:underline flex flex-col"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         activeStyle={activeLinkStyles}
                         activeClassName="active"
                       >
-                        {item.name}
+                        <div className="flex flex-row justify-center">
+                          <h4>{item.name}</h4>
+                          <RiArrowDownSFill
+                            className={
+                              item.name === "Community"
+                                ? `block text-md my-auto mx-1`
+                                : "hidden"
+                            }
+                          />
+                        </div>
+                        {item.name === "Community" && isHovered && (
+                          <div
+                            onMouseEnter={() => {
+                              if (item.name === "Community") {
+                                setHovered(true);
+                              }
+                            }}
+                            onMouseLeave={() => {
+                              if (item.name === "Community") {
+                                setHovered(false);
+                              }
+                            }}
+                            className="absolute z-40 bg-white p-5 mt-8 rounded shadow grid grid-cols-2 place-content-between"
+                          >
+                            <Link to="/" className="m-4 hover:underline ">
+                              What is LWN
+                            </Link>
+                            <Link to="/" className="m-4 hover:underline ">
+                              Our Vision
+                            </Link>
+                            <Link to="/" className="m-4 hover:underline ">
+                              Statement of Faith
+                            </Link>
+                            <Link to="/" className="m-4 hover:underline ">
+                              About the Pastor
+                            </Link>
+                          </div>
+                        )}
                       </Link>
                     ))}
                   </div>
