@@ -148,10 +148,10 @@ const Header = () => {
                       Contact{" "}
                     </Link>
                     <Link
-                      to="/giveNow"
+                      to="/give"
                       className="p-2 rounded text-white bg-red-600 hover:bg-red-700 mx-2 my-auto"
                     >
-                      Donate
+                      Give
                     </Link>
                   </div>
                 </div>
@@ -189,10 +189,10 @@ const Header = () => {
                 Contact{" "}
               </Link>
               <Link
-                to="/giveNow"
+                to="/give"
                 className="p-2 rounded text-white bg-red-600 mx-2 my-auto"
               >
-                Donate
+                Give
               </Link>
             </div>
           </Disclosure.Panel>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Video from "./Video";
+// import { fetchYoutube } from "./fetchYoutube";
 
 const VideosList = () => {
   const data = useStaticQuery(graphql`
@@ -15,6 +16,7 @@ const VideosList = () => {
       }
     }
   `);
+  let count = 0;
 
   return (
     <div className="flex flex-col mx-auto my-8 md:my-14">
@@ -22,15 +24,10 @@ const VideosList = () => {
       <div className="flex flex-col md:grid grid-cols-2 place-items-center place-content-center mx-3 md:mx-10">
         {data.allGraphCmsSermonVideo.edges.map((video) => (
           <Video
-            key={video.videoSrcUrl}
+            key={count++}
             videoTitle={video.videoTitle}
-            videoSrcURL="https://www.youtube.com/watch?v=fjjqzivJQqs"
+            videoSrcURL={video.videoSrcURL}
           />
-          // <Video
-          //   key={video.videoSrcUrl}
-          //   videoTitle={video.videoTitle}
-          //   videoSrcURL={video.videoSrcURL}
-          // />
         ))}
       </div>
     </div>
