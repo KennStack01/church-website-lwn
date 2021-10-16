@@ -112,7 +112,9 @@ const Header = () => {
                           <div
                             onMouseEnter={() => {
                               if (item.name === "Community") {
-                                setHovered(true);
+                                if (item.current === true) {
+                                  setHovered(true);
+                                }
                               }
                             }}
                             onMouseLeave={() => {
@@ -123,18 +125,6 @@ const Header = () => {
                             className="absolute z-40 bg-white p-5 mt-8 rounded shadow grid grid-cols-2 place-content-between"
                           >
                             <CommunityCombo />
-                            {/* <Link to="/" className="m-4 hover:underline ">
-                              What is LWN
-                            </Link>
-                            <Link to="/" className="m-4 hover:underline ">
-                              Our Vision
-                            </Link>
-                            <Link to="/" className="m-4 hover:underline ">
-                              Statement of Faith
-                            </Link>
-                            <Link to="/" className="m-4 hover:underline ">
-                              About the Pastor
-                            </Link> */}
                           </div>
                         )}
                       </Link>
@@ -143,7 +133,7 @@ const Header = () => {
                   <div className="flex flex-row font-semibold mx-6">
                     <Link
                       to="/contact"
-                      className="text-gray-900 hover:text-curious-blue-500 mx-2 my-auto"
+                      className="text-gray-900 hover:text-curious-blue-500 mx-2 my-auto hover:text-red-500"
                       activeStyle={activeLinkStyles}
                     >
                       {" "}
@@ -194,7 +184,7 @@ const Header = () => {
                 to="/give"
                 className="p-2 rounded text-white bg-red-600 mx-2 my-auto"
               >
-                Give
+                Partner with us
               </Link>
             </div>
           </Disclosure.Panel>

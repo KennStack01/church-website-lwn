@@ -14,7 +14,7 @@ function Community() {
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
+        title="Community"
       />
       <WhatIsLifeWord />
       <AboutPastor />

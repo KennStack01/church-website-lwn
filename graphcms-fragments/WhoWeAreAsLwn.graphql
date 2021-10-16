@@ -1,0 +1,44 @@
+fragment WhoWeAreAsLwn on WhoWeAreAsLwn {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  description {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  image {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+}

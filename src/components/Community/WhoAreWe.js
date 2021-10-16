@@ -5,8 +5,10 @@ import { graphql, useStaticQuery } from "gatsby";
 const WhoAreWe = () => {
   const data = useStaticQuery(graphql`
     query {
-      graphCmsAboutWhoWeAre {
-        description
+      graphCmsWhoWeAreAsLwn {
+        description {
+          html
+        }
         image {
           url
         }
@@ -21,14 +23,17 @@ const WhoAreWe = () => {
       </h1>
       <div className=" md:mx-6">
         <img
-          src={data.graphCmsAboutWhoWeAre.image.url}
+          src={data.graphCmsWhoWeAreAsLwn.image.url}
           alt="Who we are"
           className="rounded-3xl"
         />
       </div>
-      <p className="mx-2 md:mx-5 my-4 text-justify">
-        {data.graphCmsAboutWhoWeAre.description}
-      </p>
+      <p
+        className="mx-2 md:mx-10 my-4 text-justify"
+        dangerouslySetInnerHTML={{
+          __html: data.graphCmsWhoWeAreAsLwn.description.html,
+        }}
+      ></p>
     </div>
   );
 };
