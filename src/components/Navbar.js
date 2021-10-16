@@ -7,6 +7,7 @@ import { CgClose } from "react-icons/cg";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { StaticImage } from "gatsby-plugin-image";
+import CommunityCombo from "./CommunityCombo";
 
 const navigation = [
   { name: "Welcome", route: "/", current: false },
@@ -121,7 +122,8 @@ const Header = () => {
                             }}
                             className="absolute z-40 bg-white p-5 mt-8 rounded shadow grid grid-cols-2 place-content-between"
                           >
-                            <Link to="/" className="m-4 hover:underline ">
+                            <CommunityCombo />
+                            {/* <Link to="/" className="m-4 hover:underline ">
                               What is LWN
                             </Link>
                             <Link to="/" className="m-4 hover:underline ">
@@ -132,7 +134,7 @@ const Header = () => {
                             </Link>
                             <Link to="/" className="m-4 hover:underline ">
                               About the Pastor
-                            </Link>
+                            </Link> */}
                           </div>
                         )}
                       </Link>

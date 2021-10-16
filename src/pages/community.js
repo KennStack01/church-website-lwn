@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import AboutPastor from "../components/Community/AboutPastor";
 import StatementOfFaith from "../components/Community/StatementOfFaith";
 import VisionOfTheChurch from "../components/Community/VisionOfTheChurch";
@@ -20,6 +21,14 @@ function Community() {
       <VisionOfTheChurch />
       <StatementOfFaith />
       <WhoAreWe />
+      <div className="flex flex-row justify-center">
+        <Link
+          to="/contact"
+          className="font-bold text-xl md:text-2xl my-5 md:my-8 bg-blue-back-500 px-2 py-1 text-white hover:text-yellow-400"
+        >
+          Join us Now!
+        </Link>
+      </div>
     </Layout>
   );
 }
