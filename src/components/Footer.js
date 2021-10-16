@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col divide-y divide-white text-lg md:text-lg text-white bg-blue-back-500 w-full py-5">
+    <footer className="flex flex-col divide-y divide-white text-sm md:text-md text-white bg-blue-back-500 w-full py-5">
       <div className="mx-auto flex flex-col md:flex-row justify-between ">
         <div className="mx-auto">
           <img
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col mx-3 md:mx-5">
             <Link to="/giveNow" className="hover:text-yellow-400">
-              Donate
+              Partner
             </Link>
             <Link to="/contact" className="hover:text-yellow-400">
               Contact

@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `LifeWord Nation`,
+        short_name: `LWN`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: "#122232",
