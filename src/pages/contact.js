@@ -14,7 +14,7 @@ function ContactPage() {
       />
 
       <div className="flex flex-col md:flex-row justify-center">
-        <div className="md:mx-4">
+        <div className="md:mx-4 mt-8">
           <Form />
         </div>
         <div className="md:mx-4">

@@ -1,15 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { BiMailSend } from "react-icons/bi";
 
 const Form = () => {
   return (
     <div>
+      <h1 className="text-2xl font-semibold text-center">Let's get in touch</h1>
       <div className="flex items-center w-full">
         <div className="w-full bg-gray-100 rounded p-8 m-4 md:max-w-sm md:mx-auto">
           <form
             className="mb-4 md:flex md:flex-wrap md:justify-between"
             method="post"
-            action={`https://getform.io/f/e2419428-661a-4a22-acb4-d246cf183763`}
+            action={`https://getform.io/f/e2419428-661a-4a22-acb4-d246cf183766`}
           >
             <div className="flex flex-col mb-4 md:w-full">
               <label
@@ -64,7 +66,7 @@ const Form = () => {
             <div className="mt-10 md:mx-auto">
               <button
                 type="submit"
-                className="flex flex-row mx-auto justify-evenly text-white bg-purple-500 hover:bg-purple-700 font-bold py-4 md:py-2 px-6 text-xl rounded-md"
+                className="flex flex-row mx-auto justify-evenly text-white bg-purple-500 hover:bg-purple-600 font-bold py-4 md:py-2 px-6 text-xl rounded-md"
               >
                 <h2 className="my-auto">Send {` `}</h2>
                 <BiMailSend className="text-3xl my-auto" />
