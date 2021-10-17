@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
+import MobilePay from "../components/PaymentsLink/MobilePay";
 import SEO from "../components/seo";
 
 function GiveNow() {
@@ -10,6 +11,9 @@ function GiveNow() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
+      <div>
+        <MobilePay />
+      </div>
     </Layout>
   );
 }
