@@ -11,7 +11,7 @@ function GiveNow() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
-      <div>
+      <div className="my-8 md:my-12">
         <MobilePay />
       </div>
     </Layout>
