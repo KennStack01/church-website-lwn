@@ -143,7 +143,7 @@ const Header = () => {
                       to="/give"
                       className="p-2 rounded text-white bg-red-600 hover:bg-red-700 mx-2 my-auto"
                     >
-                      Give
+                      Partner with us
                     </Link>
                   </div>
                 </div>
