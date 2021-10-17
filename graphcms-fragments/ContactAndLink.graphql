@@ -1,0 +1,37 @@
+fragment ContactAndLink on ContactAndLink {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  facebookLink1
+  facebookLink2
+  instagramLink
+  youTubeChannelLink
+  whatsAppNumber
+  telegramLink
+  lifePayLink
+  emailAddress1
+  emailAddress2
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+}

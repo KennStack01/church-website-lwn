@@ -13,13 +13,13 @@ const Form = () => {
           >
             <div className="flex flex-col mb-4 md:w-full">
               <label
-                className="mb-2 tracking-wide font-bold text-md text-gray-800"
+                className="mb-2 tracking-wide font-bold text-sm text-gray-800"
                 htmlFor="first_name"
               >
                 Full Name
               </label>
               <input
-                className="py-2 px-3 rounded-xl text-gray-800 border-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
+                className="py-2 px-3 rounded-sm text-gray-800 border-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
                 type="text"
                 name="first_name"
                 id="first_name"
@@ -29,13 +29,13 @@ const Form = () => {
             </div>
             <div className="flex flex-col mb-4 md:w-full">
               <label
-                className="mb-2 font-bold text-md text-gray-800"
+                className="mb-2 font-bold text-sm text-gray-800"
                 htmlFor="email"
               >
                 Email Address
               </label>
               <input
-                className="py-2 px-3 rounded-xl text-gray-800 border-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
+                className="py-2 px-3 rounded-sm text-gray-800 border-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
                 type="email"
                 name="email"
                 id="email"
@@ -46,7 +46,7 @@ const Form = () => {
 
             <div className="flex flex-col mt-4 md:w-full">
               <label
-                className="mb-2 font-bold text-md text-gray-800"
+                className="mb-2 font-bold text-sm text-gray-800"
                 htmlFor="message"
               >
                 How can we help?
