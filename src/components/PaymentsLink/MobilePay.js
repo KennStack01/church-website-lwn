@@ -22,7 +22,7 @@ const MobilePay = () => {
         payPalLink
         lifePayLink
       }
-      allGraphCmsBankAccountInfo {
+      allGraphCmsBankAndMobilePayment {
         edges {
           node {
             country
@@ -32,6 +32,7 @@ const MobilePay = () => {
             branchCode
             swiftCode
             mobileMoney1
+            mobileMoney2
             id
           }
         }
@@ -145,7 +146,7 @@ const MobilePay = () => {
           <div className="my-auto mx-auto">
             <h1 className="text-xl font-bold text-gray-700"> Bank Transfer </h1>
             <p className="font-semibold text-center text-xs text-gray-400">
-              For Bank Transfer
+              For Bank and Mobile Transfer
             </p>
           </div>
           <div className="text-4xl my-auto text-gray-600">
@@ -335,7 +336,7 @@ const MobilePay = () => {
               leaveTo="opacity-0 scale-95"
             >
               <div className="inline-block place-content-between z-50 w-full max-w-md my-8 px-3 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-                {data.allGraphCmsBankAccountInfo.edges.map((bank) => (
+                {data.allGraphCmsBankAndMobilePayment.edges.map((bank) => (
                   <BankInfos
                     key={bank.node.id}
                     countryName={bank.node.country}
@@ -345,46 +346,7 @@ const MobilePay = () => {
                     branchCode={bank.node.branchCode}
                     swiftCode={bank.node.swiftCode}
                     mobileMoney1={bank.node.mobileMoney1}
-                    //   mobileMoney2={bank.node.mobileMoney2}
-                  />
-                ))}
-                {data.allGraphCmsBankAccountInfo.edges.map((bank) => (
-                  <BankInfos
-                    key={bank.node.id}
-                    countryName={bank.node.country}
-                    bankName={bank.node.bankName}
-                    accountName={bank.node.accountName}
-                    accountNumber={bank.node.accountNumber}
-                    branchCode={bank.node.branchCode}
-                    swiftCode={bank.node.swiftCode}
-                    mobileMoney1={bank.node.mobileMoney1}
-                    //   mobileMoney2={bank.node.mobileMoney2}
-                  />
-                ))}
-                {data.allGraphCmsBankAccountInfo.edges.map((bank) => (
-                  <BankInfos
-                    key={bank.node.id}
-                    countryName={bank.node.country}
-                    bankName={bank.node.bankName}
-                    accountName={bank.node.accountName}
-                    accountNumber={bank.node.accountNumber}
-                    branchCode={bank.node.branchCode}
-                    swiftCode={bank.node.swiftCode}
-                    mobileMoney1={bank.node.mobileMoney1}
-                    //   mobileMoney2={bank.node.mobileMoney2}
-                  />
-                ))}
-                {data.allGraphCmsBankAccountInfo.edges.map((bank) => (
-                  <BankInfos
-                    key={bank.node.id}
-                    countryName={bank.node.country}
-                    bankName={bank.node.bankName}
-                    accountName={bank.node.accountName}
-                    accountNumber={bank.node.accountNumber}
-                    branchCode={bank.node.branchCode}
-                    swiftCode={bank.node.swiftCode}
-                    mobileMoney1={bank.node.mobileMoney1}
-                    //   mobileMoney2={bank.node.mobileMoney2}
+                    mobileMoney2={bank.node.mobileMoney2}
                   />
                 ))}
               </div>

@@ -13,7 +13,7 @@ const BankInfos = ({
 }) => {
   return (
     <div className="flex flex-col mx-auto md:mx-5">
-      <h1 className="mx-auto font-bold text-md md:text-lg my-3 bg-blue-back-500 px-2 py-1 text-white">
+      <h1 className="mx-auto font-bold text-md my-3 bg-blue-back-500 px-2 py-1 text-white rounded-md">
         {" "}
         {countryName}{" "}
       </h1>
