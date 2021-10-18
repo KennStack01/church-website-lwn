@@ -7,11 +7,12 @@ import { CgClose } from "react-icons/cg";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { StaticImage } from "gatsby-plugin-image";
-import CommunityCombo from "./CommunityCombo";
+// import CommunityCombo from "./CommunityCombo";
+import SubPageLinks from "./Community/SubPageLinks";
 
 const navigation = [
   { name: "Welcome", route: "/", current: false },
-  { name: "Community", route: "/community", current: false },
+  { name: "Community", route: "/church", current: false },
   { name: "Bible School", route: "/bibleSchool", current: false },
   { name: "Resources", route: "/resources", current: false },
   { name: "Events", route: "/events", current: false },
@@ -79,7 +80,18 @@ const Header = () => {
                         key={item.name}
                         to={item.route}
                         onMouseEnter={() => {
-                          if (item.name === "Community") {
+                          if (
+                            item.name === "Community" &&
+                            item.route === "/church"
+                          ) {
+                            setHovered(true);
+                          }
+                        }}
+                        onClick={() => {
+                          if (
+                            item.name === "Community" &&
+                            item.route === "/church"
+                          ) {
                             setHovered(true);
                           }
                         }}
@@ -124,7 +136,7 @@ const Header = () => {
                             }}
                             className="absolute z-40 bg-white p-5 mt-8 rounded shadow grid grid-cols-2 place-content-between"
                           >
-                            <CommunityCombo />
+                            <SubPageLinks />
                           </div>
                         )}
                       </Link>
@@ -166,8 +178,50 @@ const Header = () => {
                   aria-current={item.current ? "page" : undefined}
                   activeStyle={activeLinkStyles}
                   activeClassName="active"
+                  onClick={() => {
+                    if (item.name === "Community" && item.route === "/church") {
+                      setHovered(!isHovered);
+                    }
+                  }}
                 >
-                  {item.name}
+                  <div className="flex flex-row justify-center">
+                    <h4 className="">{item.name}</h4>
+                    <RiArrowDownSFill
+                      onClick={() => {
+                        if (
+                          item.name === "Community" &&
+                          item.route === "/church"
+                        ) {
+                          setHovered(true);
+                        }
+                      }}
+                      className={
+                        item.name === "Community"
+                          ? `block text-2xl my-auto mx-1`
+                          : "hidden"
+                      }
+                    />
+
+                    {item.name === "Community" && isHovered && (
+                      <div
+                        onMouseEnter={() => {
+                          if (item.name === "Community") {
+                            if (item.current === true) {
+                              setHovered(true);
+                            }
+                          }
+                        }}
+                        onMouseLeave={() => {
+                          if (item.name === "Community") {
+                            setHovered(false);
+                          }
+                        }}
+                        className="absolute z-40 bg-white p-5 mt-8 rounded shadow flex flex-col md:grid grid-cols-2 place-content-between"
+                      >
+                        <SubPageLinks />
+                      </div>
+                    )}
+                  </div>
                 </Link>
               ))}
             </nav>
