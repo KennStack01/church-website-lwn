@@ -24,11 +24,11 @@ const Event = ({
         </p>
       </div>
       <div className="flex flex-col md:flex-row my-auto col-span-6">
-        <div className="flex flex-col md:w-4/5">
+        <div className="flex flex-col my-auto md:w-4/5">
           <a
             href={eventLink}
             target="__blank"
-            className="md:my-auto text-xl mb-2 mt-1 font-bold hover:underline hover:text-blue-back-400"
+            className=" text-xl mb-2 mt-1 font-bold hover:underline hover:text-blue-back-400"
           >
             <h2> {title} </h2>
           </a>
