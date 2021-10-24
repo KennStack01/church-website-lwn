@@ -10,9 +10,9 @@ const SubPageLinks = () => {
       <Link to="/leadership" className="m-4 hover:underline">
         Church Leadership
       </Link>
-      <Link to="/extensions" className="m-4 hover:underline">
+      {/* <Link to="/extensions" className="m-4 hover:underline">
         Church Extensions
-      </Link>
+      </Link> */}
     </>
   );
 };

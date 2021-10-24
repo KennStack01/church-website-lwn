@@ -1,0 +1,41 @@
+fragment ChurchExtension on ChurchExtension {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  lwnExtensionName
+  pastorsName
+  churchAddress
+  phoneNumber1
+  phoneNumber2
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  profilePicture {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+}

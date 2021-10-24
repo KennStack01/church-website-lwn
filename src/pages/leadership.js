@@ -14,12 +14,10 @@ function Leadership() {
         title="Leadership"
       />
 
-      <h1 className="text-center text-xl font-semibold mt-10 md:mt-8">
-        Church Overseers
-      </h1>
       <div>
         <LeadersList />
       </div>
+
       <div className="flex flex-row justify-center">
         <Link
           to="/contact"
