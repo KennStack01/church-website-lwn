@@ -28,11 +28,11 @@ const Event = ({
           <a
             href={eventLink}
             target="__blank"
-            className="md:my-auto text-xl my-4 font-bold hover:underline hover:text-blue-back-400"
+            className="md:my-auto text-xl mb-2 mt-1 font-bold hover:underline hover:text-blue-back-400"
           >
             <h2> {title} </h2>
           </a>
-          <p className="my-2 md:my-3">
+          <p className="my-2 md:text-sm">
             {" "}
             {description.substring(0, 200)}
             {"..."}{" "}
