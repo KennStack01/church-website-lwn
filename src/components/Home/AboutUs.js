@@ -34,11 +34,10 @@ const AboutUs = () => {
           {"..."}
         </p>
       </div>
-      <Link
-        to="/community"
-        className="flex flex-row font-semibold mx-auto w-24 p-2 text-blue-back-500 bg-new-yellow-600 hover:bg-new-yellow-700 rounded -mt-6 z-10 relative"
-      >
-        About Us
+      <Link to="/community">
+        <button className="flex flex-row font-semibold mx-auto w-24 p-2 text-blue-back-500 bg-new-yellow-600 hover:bg-new-yellow-700 rounded -mt-6 z-10 relative">
+          About Us
+        </button>
       </Link>
     </div>
   );

@@ -5,7 +5,7 @@ const SubPageLinks = () => {
   return (
     <>
       <Link to="/church" className="m-4 hover:underline">
-        LifeWord Nation
+        About LifeWord
       </Link>
       <Link to="/leadership" className="m-4 hover:underline">
         Church Leadership
