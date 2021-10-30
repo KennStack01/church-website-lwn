@@ -27,8 +27,6 @@ const Footer = () => {
             <Link to="/community" className="hover:text-yellow-400">
               Community
             </Link>
-          </div>
-          <div className="flex flex-col mx-3 md:mx-5">
             <Link to="/community" className="hover:text-yellow-400">
               Resources
             </Link>
