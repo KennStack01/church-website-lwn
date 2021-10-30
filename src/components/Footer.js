@@ -29,9 +29,6 @@ const Footer = () => {
             </Link>
           </div>
           <div className="flex flex-col mx-3 md:mx-5">
-            <Link to="/bibleSchool" className="hover:text-yellow-400">
-              Bible School
-            </Link>
             <Link to="/community" className="hover:text-yellow-400">
               Resources
             </Link>

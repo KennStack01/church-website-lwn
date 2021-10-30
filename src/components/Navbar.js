@@ -13,7 +13,6 @@ import SubPageLinks from "./Community/SubPageLinks";
 const navigation = [
   { name: "Welcome", route: "/", current: false },
   { name: "Community", route: "/church", current: false },
-  { name: "Bible School", route: "/bibleSchool", current: false },
   { name: "Resources", route: "/resources", current: false },
   { name: "Events", route: "/events", current: false },
   // { name: "Contact", route: "/contact", current: false },
