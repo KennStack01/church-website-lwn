@@ -14,7 +14,7 @@ function Church() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`Lifeword`, `Church`, `Jesus Christ`, `Rev Visu`]}
         title="Church"
       />
       <WhatIsLifeWord />
