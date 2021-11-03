@@ -11,7 +11,7 @@ const Form = () => {
           <form
             className="mb-4 md:flex md:flex-wrap md:justify-between"
             method="post"
-            action={`https://getform.io/f/e2419428-661a-4a22-acb4-d246cf183766`}
+            action={process.env.CONTACT_FORM_TOKEN}
           >
             <div className="flex flex-col mb-4 md:w-full">
               <label
